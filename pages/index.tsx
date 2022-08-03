@@ -1,4 +1,4 @@
-import type { GetServerSideProps, NextPage } from "next";
+import type { GetServerSideProps, GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import fs from "fs";
@@ -112,7 +112,7 @@ const Home: NextPage<{ content: Content }> = ({
 
 export default Home;
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const yamlData = fs
     .readFileSync(path.join(__dirname, "..", "..", "..", "content.yaml"))
     .toString();
