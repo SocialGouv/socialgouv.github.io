@@ -1,0 +1,88 @@
+# todo: extract this from GitHub projects labels
+projects:
+  - name: kontinuous
+    category: deployment
+    description: La CI/CD pour kubernetes
+    tags:
+      - kubernetes
+  - name: matomo-next
+    category: web
+    description: Tracking Matomo pour vos applications Next.js
+    tags:
+      - matomo
+      - npm
+  - name: matomo-postgres
+    category: data
+    description: Dumps de Matomo vers PostgreSQL
+    tags:
+      - matomo
+      - npm
+  - name: recherche-entreprises
+    category: data
+    description: Pipelines Elastic Search et API pour la recherche rapide d'entreprise
+    tags:
+      - api
+  - name: kali-data
+    category: data
+    tags:
+      - dila
+      - npm
+    description: dumps quotidiens JSON de la base KALI de LegiFrance
+  - name: legi-data
+    category: data
+    tags:
+      - dila
+      - npm
+    description: dumps quotidiens JSON de la base LEGI de LegiFrance
+  - name: anonymify
+    category: data
+    description: Anonymisation de CSV et autres données (JS/TS)
+  - name: template
+    category: web
+    description: Template d'application avec outillage de dev + KeyCloak + Hasura
+    tags:
+      - keycloak
+  - name: dashlord
+    category: web
+    description: Compile les audits de bonnes pratiques en un dashboard unique.
+    tags:
+      - sécurité
+  - name: keycloak-dsfr
+    category: web
+    description: Template KeyCloak avec le système de design de l'état
+    tags:
+      - sécurité
+      - keycloak
+  - name: demo-captchetat
+    category: web
+    description: Démo fonctionnelle de l'API CaptchEtat
+    tags:
+      - react
+      - sécurité
+  - name: react-departements
+    category: web
+    description: Une carte de France où certains departements peuvent être colorés.
+    tags:
+      - react
+      - npm
+  - name: webseal
+    category: web
+    tags:
+      - sécurité
+    description: A static web interface to generate sealed-secrets
+  - name: aes-gcm-rsa-oaep
+    category: web
+    tags:
+      - sécurité
+      - npm
+    description: Kubeseal aes-gcm-rsa-oaep encryption implementaton in TypeScript
+  - name: dila-api-cient
+    category: web
+    tags:
+      - dila
+      - npm
+      - api
+    description: Client JS/TS pour l'API DILA sur le portail piste de l'AIFE
+  - name: archimail-pst-extractor
+    category: data
+    description: Extract objects from MS Outlook/Exchange PST files
