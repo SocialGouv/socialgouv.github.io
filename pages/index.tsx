@@ -39,6 +39,12 @@ const Home: NextPage<{ content: Content }> = ({
 
       <main className={styles.main}>
         <h1 className={styles.title}>
+          <img
+            alt="Logo SocialGouv"
+            src="/socialgroove-100.jpg"
+            width={70}
+            style={{ verticalAlign: "top", marginRight: 20 }}
+          />
           <a href="https://github.com/SocialGouv">SocialGouv</a> open source
         </h1>
         <p className={styles.description}>
