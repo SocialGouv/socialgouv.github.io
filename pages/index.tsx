@@ -6,16 +6,48 @@ import path from "path";
 import { parse } from "yaml";
 import styles from "../styles/Home.module.css";
 
+type Project = {
+  name: string;
+  description: string;
+  category: string;
+  tags: string[];
+  href: string;
+};
+
+type Article = Project;
+
 type Content = {
-  projects: {
-    name: string;
-    description: string;
-    category: string;
-    tags: string[];
-  }[];
+  projects: Project[];
+  articles: Article[];
 };
 
 const uniq = (arr: any[]) => Array.from(new Set(arr));
+
+const Card = ({
+  href,
+  title,
+  description,
+  tags,
+}: {
+  href: string;
+  title: string;
+  description: string;
+  tags?: string[];
+}) => (
+  <a href={href} className={styles.card}>
+    <h3>{title} &rarr;</h3>
+    <p>{description}</p>
+    {tags && (
+      <div className={styles.tags}>
+        {tags.map((tag) => (
+          <span className={styles.tag} key={tag}>
+            {tag}
+          </span>
+        ))}
+      </div>
+    )}
+  </a>
+);
 
 const Home: NextPage<{ content: Content }> = ({
   content,
@@ -29,6 +61,7 @@ const Home: NextPage<{ content: Content }> = ({
       return bCount - aCount;
     }
   );
+  const articles = content.articles;
   return (
     <div className={styles.container}>
       <Head>
@@ -57,28 +90,19 @@ const Home: NextPage<{ content: Content }> = ({
           const projects = content.projects
             .filter((p) => p.category === category)
             .sort((a, b) => a.name.localeCompare(b.name));
+
           return (
             <div key={category}>
               <h2 style={{ textAlign: "center" }}>{category}</h2>
               <div className={styles.grid}>
                 {projects.map((project) => (
-                  <a
-                    href={`https://github.com/SocialGouv/${project.name}`}
-                    className={styles.card}
+                  <Card
                     key={project.name}
-                  >
-                    <h3>{project.name} &rarr;</h3>
-                    <p>{project.description}</p>
-                    {project.tags && (
-                      <div className={styles.tags}>
-                        {project.tags.map((tag) => (
-                          <span className={styles.tag} key={tag}>
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                  </a>
+                    href={`https://github.com/SocialGouv/${project.name}`}
+                    title={project.name}
+                    description={project.description}
+                    tags={project.tags}
+                  />
                 ))}
               </div>
             </div>
@@ -99,6 +123,23 @@ const Home: NextPage<{ content: Content }> = ({
           </a>{" "}
           et <a href="https://code.gouv.fr">code.gouv.fr</a>
         </p>{" "}
+        <hr className={styles.hr} />
+        <br />
+        <br />
+        <h2 style={{ textAlign: "center" }}>Lectures recommandées</h2>
+        <div className={styles.grid}>
+          {articles.map((article) => (
+            <Card
+              key={article.name}
+              href={article.href}
+              title={article.name}
+              description={article.description}
+              tags={article.tags}
+            />
+          ))}
+        </div>
+        <br />
+        <br />
         <hr className={styles.hr} />
         <br />
         <br />

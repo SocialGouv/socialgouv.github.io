@@ -120,3 +120,16 @@ projects:
     description: Tutoriel GitLab en Français
     tags:
       - documentation
+articles:
+  - name: Doc tech SocialGouv
+    description: La doc tech et les recommandations de la Fabrique
+    href: https://socialgouv.github.io/support
+  - name: Doc beta.gouv.fr
+    description: Doc générale de la communauté betagouv
+    href: https://doc.incubateur.net
+  - name: The XY Problem
+    description: Prendre du recul, identifier le problème à résoudre
+    href: https://xyproblem.info
+  - name: Don't ask to ask, just ask
+    href: https://dontasktoask.com
+    description: By asking, you're asking for more than what you think you're asking.
