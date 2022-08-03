@@ -34,6 +34,16 @@ projects:
       - dila
       - npm
     description: dumps quotidiens JSON de la base LEGI de LegiFrance
+  - name: fiches-vdd
+    category: data
+    tags:
+      - npm
+    description: dumps quotidiens JSON des fiches vos droits et démarches (service-public.fr) au format JSON
+  - name: fiches-travail-data
+    category: data
+    tags:
+      - npm
+    description: dumps quotidiens JSON des fiches travail du site travail-emploi.gouv.fr
   - name: anonymify
     category: data
     description: Anonymisation de CSV et autres données (JS/TS)
@@ -53,6 +63,7 @@ projects:
     tags:
       - sécurité
       - keycloak
+      - kubernetes
   - name: demo-captchetat
     category: web
     description: Démo fonctionnelle de l'API CaptchEtat
@@ -69,6 +80,7 @@ projects:
     category: web
     tags:
       - sécurité
+      - kubernetes
     description: A static web interface to generate sealed-secrets
   - name: aes-gcm-rsa-oaep
     category: web
@@ -86,3 +98,25 @@ projects:
   - name: archimail-pst-extractor
     category: data
     description: Extract objects from MS Outlook/Exchange PST files
+  - name: react-k8s-viewer
+    category: web
+    description: Render web diagrams from your kubernetes manifests
+    tags:
+      - npm
+      - kubernetes
+      - react
+  - name: actions-runner
+    category: deployment
+    description: Custom self-hosted GitHub runners docker image
+    tags:
+      - kubernetes
+  - name: codes-naf
+    category: data
+    description: Liste des codes NAF issue de data.gouv.fr
+    tags:
+      - npm
+  - name: tutoriel-gitlab
+    category: web
+    description: Tutoriel GitLab en Français
+    tags:
+      - documentation

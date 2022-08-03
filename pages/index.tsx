@@ -52,8 +52,8 @@ const Home: NextPage<{ content: Content }> = ({
             .filter((p) => p.category === category)
             .sort((a, b) => a.name.localeCompare(b.name));
           return (
-            <>
-              <h2>{category}</h2>
+            <div key={category}>
+              <h2 style={{ textAlign: "center" }}>{category}</h2>
               <div className={styles.grid}>
                 {projects.map((project) => (
                   <a
@@ -75,7 +75,7 @@ const Home: NextPage<{ content: Content }> = ({
                   </a>
                 ))}
               </div>
-            </>
+            </div>
           );
         })}
         <br />
