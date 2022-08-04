@@ -21,7 +21,7 @@ jobs:
       - run: |
           yarn
           yarn build
-          yarn export
+          yarn next export
           touch ./out/.nojekyll
 
       # deploy build to gh-pages
