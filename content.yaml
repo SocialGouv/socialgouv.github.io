@@ -120,6 +120,11 @@ projects:
     description: Tutoriel GitLab en Français
     tags:
       - documentation
+  - name: hasura-permissions-viewer
+    category: web
+    description: Generate summary of hasura permissions
+    tags:
+      - sécurité
 articles:
   - name: Doc tech SocialGouv
     description: La doc tech et les recommandations de la Fabrique
