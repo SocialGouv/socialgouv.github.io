@@ -70,6 +70,12 @@ projects:
     tags:
       - react
       - sécurité
+  - name: demo-publicodes
+    category: web
+    description: Démo fonctionnelle d'algorithmes publi.codes
+    tags:
+      - règles
+      - rules-as-code
   - name: react-departements
     category: web
     description: Une carte de France où certains departements peuvent être colorés.
