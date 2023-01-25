@@ -131,6 +131,11 @@ projects:
     description: Generate summary of hasura permissions
     tags:
       - sécurité
+  - name: e2esdk
+    category: web
+    description: End-to-end encryption for web applications
+    tags:
+      - sécurité
 articles:
   - name: Doc tech SocialGouv
     description: La doc tech et les recommandations de la Fabrique
