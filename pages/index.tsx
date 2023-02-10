@@ -83,7 +83,7 @@ const Home: NextPage<{ content: Content }> = ({
         <p className={styles.description}>
           Composants publiés en open-source par la{" "}
           <a href="https://www.fabrique.social.gouv.fr">
-            fabrique des ministères sociaux
+            fabrique numérique des ministères sociaux
           </a>
         </p>
         {categories.map((category) => {
