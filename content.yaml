@@ -136,11 +136,13 @@ projects:
     description: End-to-end encryption for web applications
     tags:
       - sécurité
+      - npm
   - name: streaming-file-encryption
     category: web
     description: Streaming encryption/decryption for files in Node.js made simple and secure.
     tags:
       - sécurité
+      - npm
 articles:
   - name: Doc tech SocialGouv
     description: La doc tech et les recommandations de la Fabrique
