@@ -143,6 +143,12 @@ projects:
     tags:
       - sécurité
       - npm
+  - name: helm-charts
+    category: deployment
+    description: Charts HELM partagés
+    tags:
+      - kubernetes
+      - helm
 articles:
   - name: Doc tech SocialGouv
     description: La doc tech et les recommandations de la Fabrique
