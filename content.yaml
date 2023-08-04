@@ -149,6 +149,12 @@ projects:
     tags:
       - kubernetes
       - helm
+  - name: helm-schema
+    category: deployment
+    description: Generate JSON schemas from your HELM values files
+    tags:
+      - kubernetes
+      - helm
 articles:
   - name: Doc tech SocialGouv
     description: La doc tech et les recommandations de la Fabrique
