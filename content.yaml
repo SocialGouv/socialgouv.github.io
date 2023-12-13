@@ -87,7 +87,7 @@ projects:
       - sécurité
       - npm
     description: Kubeseal aes-gcm-rsa-oaep encryption implementaton in TypeScript
-  - name: dila-api-cient
+  - name: dila-api-client
     category: web
     tags:
       - dila
