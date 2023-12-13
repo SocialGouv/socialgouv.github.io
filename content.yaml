@@ -57,13 +57,6 @@ projects:
     description: Compile les audits de bonnes pratiques en un dashboard unique.
     tags:
       - sécurité
-  - name: keycloak-dsfr
-    category: web
-    description: Template KeyCloak avec le système de design de l'état
-    tags:
-      - sécurité
-      - keycloak
-      - kubernetes
   - name: demo-captchetat
     category: web
     description: Démo fonctionnelle de l'API CaptchEtat
