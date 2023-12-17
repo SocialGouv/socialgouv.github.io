@@ -148,6 +148,12 @@ projects:
     tags:
       - kubernetes
       - helm
+  - name: json-schemas
+    category: data
+    description: Some useful kubernetes json-schemas
+    tags:
+      - kubernetes
+      - helm
 articles:
   - name: Doc tech SocialGouv
     description: La doc tech et les recommandations de la Fabrique
